@@ -26,13 +26,13 @@
     profile_file: "{{ ansible_env.HOME }}/.bash_profile"
   when: ansible_os_family == "RedHat"
 
-- name: set maven variables
+- name: set kafka variables
   lineinfile:
    dest: "{{ profile_file }}"
    regexp: "^{{ item.start }}"
    line: "{{ item.start }}{{ item.end }}"
    insertbefore: "export PATH"
   with_items:
-   - { start: "KAFKA_HOME=", end: "{{ maven_home }}" }
+   - { start: "KAFKA_HOME=", end: "{{ kafka_home }}" }
    - { start: "PATH=$KAFKA_HOME/bin:", end: "$PATH" }
    - { start: "export KAFKA_HOME", end: "" }

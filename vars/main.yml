@@ -1,4 +1,4 @@
 ---
 # vars file for apache-kafka
-kafka_base: "{{ ansible_env.HOME }}/apache/maven"
+kafka_base: "{{ ansible_env.HOME }}/apache/kafka"
 kafka_home: "{{ kafka_base }}/kafka_{{ kafka_scala_version }}-{{ kafka_version }}"
