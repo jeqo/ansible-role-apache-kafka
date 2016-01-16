@@ -1,0 +1,4 @@
+
+# Install a role from the Ansible Galaxy
+- src: jeqo.apache-kafka
+  name: apache-kafka
