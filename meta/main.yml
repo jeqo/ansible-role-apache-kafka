@@ -1,6 +1,7 @@
+---
 galaxy_info:
-  author: jeqo (quilcate.jorge@gmail.com)
-  description: kafka role to install and configure kafka components
+  author: Jorge Quilcate
+  description: ansible role to install and configure kafka components
 
   license: MIT
 
@@ -111,6 +112,6 @@ galaxy_info:
   #  - wheezy
 
   galaxy_tags:
-    - middleware
+  - middleware
 
 dependencies: []
