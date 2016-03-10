@@ -13,7 +13,7 @@
     creates: "{{ kafka_home }}/bin/kafka-server-start.sh"
 
 - set_fact:
-    profile_file: "$HOME/.profile"
+    profile_file: "{{ ansible_env.HOME }}/.profile"
   when: ansible_os_family == "Debian"
 
 - set_fact:
