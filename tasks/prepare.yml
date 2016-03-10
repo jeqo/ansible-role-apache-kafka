@@ -1,0 +1,19 @@
+---
+#
+- name: prepare kafka group
+  group:
+    name: "{{ kafka_group }}"
+    state: present
+
+- name: prepare kafka user
+  user:
+    name: "{{ kafka_user }}"
+    group: "{{ kafka_group }}"
+    state: present
+
+- name: prepare kafka directory
+  file:
+    path: "{{ kafka_base }}"
+    state: directory
+    owner: "{{ kafka_user }}"
+    group: "{{ kafka_group }}"

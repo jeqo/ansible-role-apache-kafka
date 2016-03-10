@@ -1,4 +1,6 @@
 ---
 # vars file for apache-kafka
-kafka_base: "{{ ansible_env.HOME }}/apache/kafka"
+kafka_base: "/opt/apache/kafka"
 kafka_home: "{{ kafka_base }}/kafka_{{ kafka_scala_version }}-{{ kafka_version }}"
+kafka_user: kafka
+kafka_group: kafka
