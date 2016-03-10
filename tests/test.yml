@@ -1,0 +1,14 @@
+---
+- hosts: test01
+
+  roles:
+    - role: apache-kafka
+      kafka_version: 0.9.0.1
+      kafka_scala_version: 2.11
+
+- hosts: test02
+
+  roles:
+    - role: apache-kafka
+      kafka_version: 0.9.0.1
+      kafka_scala_version: 2.11
