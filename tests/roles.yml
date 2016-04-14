@@ -1,4 +1,6 @@
 
 # Install a role from the Ansible Galaxy
+- src: jeqo.apache-zookeeper
+  name: apache-zookeeper
 - src: jeqo.apache-kafka
   name: apache-kafka
