@@ -1,0 +1,5 @@
+---
+#
+- template:
+    src: server.properties.j2
+    dest: "{{ kafka_home }}/conf/server_{{ kafka_broker_id }}.conf"
