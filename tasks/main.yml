@@ -5,3 +5,7 @@
 
 - include: install.yml
   become: yes
+
+- include: configure.yml
+  become: yes
+  become_user: "{{ kafka_user }}"
